@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grupo 3 Corações</title>
+    <link rel="shortcut icon" type="image/ico" href="./img/favicon.ico" />
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Grupo 3corações">
+    <meta property="og:description" content="Há mais de 60 anos o Grupo 3corações traz produtos de alta qualidade para os consumidores brasileiros. Aqui a tradição e inovação andam lado a lado.">
+    <meta property="og:url" content="https://www.3coracoes.com.br/">
+    <meta property="og:site_name" content="Grupo 3corações">
+
+    <!-- SWIPPERJS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+    <!-- ICONSCOUT -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/solid.css">
+
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <header>
+        <!-- NAVBAR INICIO -->
+        <nav class="navbar">
+            <div class="container relative">
+                <div class="navbar__wrapper relative flex items-center">
+                    <div class="navbar__left">
+                        <a href="/" class="logo">
+                            <img src="./img/logo.png" alt="3Corações">
+                        </a>
+                    </div>
+                    <div class="navbar__right">
+                        <div class="navbar__top">
+                            <ul class="flex items-center">
+                                <li><a href="#">Trabalhe Conosco</a></li>
+                                <li><a href="#" class="flex items-center gap">Fale Conosco<img src="./img/icon-fale-conosco.png" alt=""></a></li>
+                                <li><a href="#"><img src="./img/icon-facebook.png" alt=""></a></li>
+                                <li><a href="#"><img src="./img/icon-linkedin.png" alt=""></a></li>
+                                <li><a href="#"><img src="./img/flag_en.jpg" alt=""></a></li>
+                                <li><a href="#"><img src="./img/flag_es.jpg" alt=""></a></li>
+                            </ul>
+                        </div>
+                        <div class="navbar__bottom">
+                            <ul class="flex items-center">
+                                <li>
+                                    <a href="#" id="toggle">O Grupo</a>
+                                    <ul class="navbar__submenu hide" id="grupo">
+                                        <li><a href="#">Quem Somos</a></li>
+                                        <li><a href="#">Nossa História</a></li>
+                                        <li><a href="#">Governança Corporativa</a></li>
+                                        <li><a href="#">Programa de Integridade</a></li>
+                                        <li><a href="#">Onde Estamos</a></li>
+                                        <li><a href="#">Reconhecimentos</a></li>
+                                        <li><a href="#">Notícias</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#" id="toggle">Marcas</a>
+                                    <ul class="navbar__submenu hide" id="marcas">
+                                        <li><a href="#">Cafés Especiais</a></li>
+                                        <li><a href="#">Torrados e Moídos</a></li>
+                                        <li><a href="#">Sistemas de Multibebidas</a></li>
+                                        <li><a href="#">E-commerce</a></li>
+                                        <li><a href="#">Achocolatados</a></li>
+                                        <li><a href="#">Refresco</a></li>
+                                        <li><a href="#">Milho e Temperos</a></li>
+                                        <li><a href="#">Ver todas</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#" id="toggle">Mundo do Café</a>
+                                    <ul class="navbar__submenu hide">
+                                        <li><a href="#">Mundo do Café</a></li>
+                                        <li><a href="#">Do Grão à Xícara</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#" id="toggle">Relacionamento</a>
+                                    <ul class="navbar__submenu hide">
+                                        <li><a href="#">Central de Relacionamento</a></li>
+                                        <li><a href="#">Conectando Pessoas</a></li>
+                                        <li><a href="#">Imprensa</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#" id="toggle">Sustentabilidade</a>
+                                    <ul class="navbar__submenu hide">
+                                        <li><a href="#">Sustentabilidade</a></li>
+                                        <li><a href="#">Iniciativas Sociais</a></li>
+                                        <li><a href="#">Iniciativas Ambientais</a></li>
+                                    </ul>
+                                </li>
+                                <li>|</li>
+                                <li><a href="#" class="nossa-loja">Nossa Loja<svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M19.0026 15.9801C17.3525 15.9801 16.0101 17.3226 16.0101 18.9726C16.0101 20.6227 17.3526 21.9651 19.0026 21.9651C20.6527 21.9651 21.9952 20.6227 21.9952 18.9726C21.9952 17.3226 20.6527 15.9801 19.0026 15.9801ZM19.0026 20.1696C18.3425 20.1696 17.8056 19.6328 17.8056 18.9726C17.8056 18.3125 18.3425 17.7756 19.0026 17.7756C19.6628 17.7756 20.1997 18.3125 20.1997 18.9726C20.1997 19.6328 19.6628 20.1696 19.0026 20.1696Z" fill="black"></path>
+                                            <path d="M23.8092 4.41424C23.6392 4.19669 23.3786 4.0698 23.1024 4.0698H5.54159L4.73361 0.68916C4.63695 0.285189 4.27573 4.09994e-09 3.86037 4.09994e-09H0.897755C0.401909 -4.68711e-05 0 0.401861 0 0.897708C0 1.39355 0.401909 1.79546 0.897755 1.79546H3.15175L6.06946 14.0038C6.16611 14.4081 6.52733 14.693 6.9427 14.693H20.9179C21.3305 14.693 21.6902 14.4117 21.7893 14.0112L23.9738 5.18328C24.0399 4.9152 23.9792 4.63179 23.8092 4.41424ZM20.2155 12.8975H7.65131L5.97069 5.86531H21.9553L20.2155 12.8975Z" fill="black"></path>
+                                            <path d="M8.13973 15.9801C6.48963 15.9801 5.14722 17.3226 5.14722 18.9726C5.14722 20.6227 6.48968 21.9651 8.13973 21.9651C9.78979 21.9651 11.1323 20.6227 11.1323 18.9726C11.1323 17.3226 9.78979 15.9801 8.13973 15.9801ZM8.13973 20.1696C7.47959 20.1696 6.94273 19.6328 6.94273 18.9726C6.94273 18.3125 7.47959 17.7756 8.13973 17.7756C8.79988 17.7756 9.33674 18.3125 9.33674 18.9726C9.33674 19.6328 8.79988 20.1696 8.13973 20.1696Z" fill="black"></path>
+                                        </svg></a></li>
+                            </ul>
+                        </div>
+                        <!-- MOBILE MENU ICON INIT -->
+                        <div class="navbar__mobile">
+                            <button class="navbar__mobile_icon uil uil-bars"></button>
+                        </div>
+                        <!-- MOBILE MENU ICON END -->
+                    </div>
+
+                </div>
+
+                <!-- SEARCH FORM INIT -->
+                <form class="form__search" onsubmit="event.preventDefault(); validateForm();">
+                    <input class="closed" type="text" id="searchbar" name="searchbar" placeholder="digite o que procura">
+                    <button type="submit" class="navbar__search" id="navbar__search">
+                        <i class="uil uil-search"></i>
+                    </button>
+                </form>
+                <!-- SEARCH FORM END -->
+            </div>
+        </nav>
+        <!-- NAVBAR FIM -->
+    </header>
+
+
+    <main>
+        <!-- BANNER SLIDER TOPO INICIO -->
+        <section class="banner">
+            <div class="swiper banner__overflow">
+                <div class="swiper-wrapper relative">
+
+                    <div class="swiper-slide banner__topo">
+                        <img src="./img/banner-1.png" alt="">
+                        <div class="container relative">
+                            <div class="banner__info" style="background: #75152e;">
+                                <img src="./img/title-bn2-1.png" alt="">
+                                <h2>O blend perfeito para o paladar de diferentes regiões, com qualidade e responsabilidade a cada bebida.</h2>
+                                <a href="#" class="banner__link">Saiba Mais</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="swiper-slide banner__topo">
+                        <img src="./img/banner-2.jpg" alt="">
+                        <div class="container relative">
+                            <div class="banner__info" style="background: #98531a;">
+                                <img src="./img/title-bn1.png" alt="">
+                                <h2>Cuidado com a qualidade dos grãos desde o plantio, com o mesmo entusiasmo e paixão em todas as etapas da cafeicultura.</h2>
+                                <a href="#" class="banner__link">Saiba Mais</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide banner__topo">
+                        <img src="./img/banner-3.jpg" alt="">
+                        <div class="container relative">
+                            <div class="banner__info" style="background: #7a161e;">
+                                <img src="./img/home_tx-1.png" alt="">
+                                <h2>O prazer das coisas simples que nos fazem viver nossas melhores experiências.</h2>
+                                <a href="#" class="banner__link">Saiba Mais</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide banner__topo">
+                        <img src="./img/banner-4.jpg" alt="">
+                        <div class="container relative">
+                            <div class="banner__info" style="background: #af4c00;">
+                                <img src="./img/banner-mensagem-pandemia.png" alt="">
+                                <h2>
+                                    "Nossa fé, nossa resiliência e coragem nos guiam nessa travessia, para chegarmos à outra margem transformados e fortalecidos."
+                                    <br><br>
+                                    <strong>Pedro Lima</strong><br>
+                                    Presidente Grupo 3corações
+                                </h2>
+                                <a href="#" class="banner__link">Saiba Mais</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide banner__topo">
+                        <img src="./img/banner-5.jpg" alt="">
+                        <div class="container relative">
+                            <div class="banner__info" style="background: #5326b3;">
+                                <img src="./img/banner-gptw-industria-21.png" alt="">
+                                <h2>O Grupo 3corações, pela segunda vez consecutiva, aparece entre as melhores empresas do segmento de grande porte</h2>
+                                <a href="#" class="banner__link">Saiba Mais</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide banner__topo">
+                        <img src="./img/banner-6.jpg" alt="">
+                        <div class="container relative">
+                            <div class="banner__info" style="background: #303880;">
+                                <img src="./img/banner-gptw-11.png" alt="">
+                                <h2>O Grupo <strong><i>3corações</i></strong> recebe o prêmio GPTW 2021 pelo 11º ano consecutivo</h2>
+                                <a href="#" class="banner__link">Saiba Mais</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide banner__topo">
+                        <img src="./img/banner-7.jpg" alt="">
+                        <div class="container relative">
+                            <div class="banner__info" style="background: #cb9434;">
+                                <img src="./img/banner-portinari-2.png" alt="">
+                                <h2>A nova linha chega para enaltecer as raízes brasileiras unindo arte e café.</h2>
+                                <a href="#" class="banner__link">Saiba Mais</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pagination-test"></div>
+            </div>
+        </section>
+        <!-- BANNER SLIDER TOPO FIM -->
+        <!-- COMENTARIO INICIO -->
+        <section class="comment">
+            <div class="container">
+                <p>"Somos, antes de tudo, <span>apaixonados</span> pelo que fazemos."</p>
+                <small>Grupo <b><i>3corações</i></b></small>
+            </div>
+        </section>
+        <!-- COMENTARIO FIM -->
+        <!-- SLIDER DE DIVULGAÇÃO INICIO -->
+        <section class="divulga">
+            <div class="swiper slide relative">
+                <div class="swiper-wrapper">
+                    <div class="banner-image swiper-slide">
+                        <img src="https://www.3coracoes.com.br/wp-content/themes/grupo3coracoes/img/home/portinari-min.jpg" alt="">
+                    </div>
+                    <div class="banner-image swiper-slide">
+                        <img src="https://www.3coracoes.com.br/wp-content/themes/grupo3coracoes/img/home/santa-clara-gourmet-min.jpg" alt="">
+                    </div>
+                    <div class="banner-image swiper-slide">
+                        <img src="https://www.3coracoes.com.br/wp-content/themes/grupo3coracoes/img/home/santa-clara-iced-min.jpg" alt="">
+                    </div>
+                    <div class="banner-image swiper-slide">
+                        <img src="https://www.3coracoes.com.br/wp-content/themes/grupo3coracoes/img/home/frisco-baunilha-limao-min.jpg" alt="">
+                    </div>
+                    <div class="banner-image swiper-slide">
+                        <img src="https://www.3coracoes.com.br/wp-content/themes/grupo3coracoes/img/home/pimpinela-cappuccino-min.jpg" alt="">
+                    </div>
+                </div>
+                <div class="swiper-pagination teste"></div>
+            </div>
+        </section>
+        <!-- SLIDER DE DIVULGAÇÃO INICIO -->
+        <!-- MARCAS INICIO -->
+        <section class="marcas">
+            <div class="container">
+                <h2>
+                    <img src="https://www.3coracoes.com.br/wp-content/uploads/2016/10/logo-nossas-marcas.png?x20808" alt="Nossas Marcas" title="Nossas Marcas" class="nossas-marcas">
+                </h2>
+
+                <div class="marcas__wrapper">
+                    <div class="marcas__card">
+                        <div class="marcas__image">
+                            <img src="./img/brand-1.png" alt="">
+                        </div>
+                        <p>Loja Exclusiva da 3 Corações</p>
+                        <a href="#" class="btn btn-primary">Saiba Mais</a>
+                    </div>
+
+                    <div class="marcas__card">
+                        <div class="marcas__image">
+                            <img src="./img/brand-2.png" alt="">
+                        </div>
+                        <p>Sabor que Apaixona</p>
+                        <a href="#" class="btn btn-primary">Saiba Mais</a>
+                    </div>
+
+                    <div class="marcas__card">
+                        <div class="marcas__image">
+                            <img src="./img/brand-3.png" alt="">
+                        </div>
+                        <p>O sabor que apaixona os apaixonados por café</p>
+                        <a href="#" class="btn btn-primary">Saiba Mais</a>
+                    </div>
+
+                    <div class="marcas__card">
+                        <div class="marcas__image">
+                            <img src="./img/brand-4.png" alt="">
+                        </div>
+                        <p>A Diferença é Clara</p>
+                        <a href="#" class="btn btn-primary">Saiba Mais</a>
+                    </div>
+
+                    <div class="marcas__card">
+                        <div class="marcas__image">
+                            <img src="./img/brand-5.png" alt="">
+                        </div>
+                        <p>Reservamos o nosso melhor para você</p>
+                        <a href="#" class="btn btn-primary">Saiba Mais</a>
+                    </div>
+
+                    <div class="marcas__card">
+                        <div class="marcas__image">
+                            <img src="./img/brand-6.png" alt="">
+                        </div>
+                        <p>Do jeitinho que o brasileiro gosta!</p>
+                        <a href="#" class="btn btn-primary">Saiba Mais</a>
+                    </div>
+
+                    <div class="marcas__card">
+                        <div class="marcas__image">
+                            <img src="./img/brand-7.png" alt="">
+                        </div>
+                        <p>Sempre um sabor que Combina</p>
+                        <a href="#" class="btn btn-primary">Saiba Mais</a>
+                    </div>
+
+                    <div class="marcas__card">
+                        <div class="marcas__image">
+                            <img src="./img/brand-8.png" alt="">
+                        </div>
+                        <p>O sabor que apaixona os apaixonados por café</p>
+                        <a href="#" class="btn btn-primary">Saiba Mais</a>
+                    </div>
+
+                    <div class="marcas__card">
+                        <div class="marcas__image">
+                            <img src="./img/brand-9.png" alt="">
+                        </div>
+                        <p>A Diferença é Clara</p>
+                        <a href="#" class="btn btn-primary">Saiba Mais</a>
+                    </div>
+
+                    <div class="marcas__card">
+                        <div class="marcas__image">
+                            <img src="./img/brand-10.png" alt="">
+                        </div>
+                        <p>Reservamos o nosso melhor para você</p>
+                        <a href="#" class="btn btn-primary">Saiba Mais</a>
+                    </div>
+
+                    <div class="marcas__card">
+                        <div class="marcas__image">
+                            <img src="./img/brand-11.png" alt="">
+                        </div>
+                        <p>Reservamos o nosso melhor para você</p>
+                        <a href="#" class="btn btn-primary">Saiba Mais</a>
+                    </div>
+
+                    <div class="marcas__card">
+                        <div class="marcas__image">
+                            <img src="./img/brand-12.png" alt="">
+                        </div>
+                        <p>Reservamos o nosso melhor para você</p>
+                        <a href="#" class="btn btn-primary">Saiba Mais</a>
+                    </div>
+
+                    <div class="marcas__card">
+                        <div class="marcas__image">
+                            <img src="./img/brand-13.png" alt="">
+                        </div>
+                        <p>Reservamos o nosso melhor para você</p>
+                        <a href="#" class="btn btn-primary">Saiba Mais</a>
+                    </div>
+
+                    <div class="marcas__card">
+                        <div class="marcas__image">
+                            <img src="./img/brand-14.png" alt="">
+                        </div>
+                        <p>Reservamos o nosso melhor para você</p>
+                        <a href="#" class="btn btn-primary">Saiba Mais</a>
+                    </div>
+
+                    <div class="marcas__card">
+                        <div class="marcas__image">
+                            <img src="./img/brand-15.png" alt="">
+                        </div>
+                        <p>Reservamos o nosso melhor para você</p>
+                        <a href="#" class="btn btn-primary">Saiba Mais</a>
+                    </div>
+
+                    <div class="marcas__card">
+                        <div class="marcas__image">
+                            <img src="./img/brand-16.png" alt="">
+                        </div>
+                        <p>Reservamos o nosso melhor para você</p>
+                        <a href="#" class="btn btn-primary">Saiba Mais</a>
+                    </div>
+
+                    <div class="marcas__card">
+                        <div class="marcas__image">
+                            <img src="./img/brand-17.png" alt="">
+                        </div>
+                        <p>Reservamos o nosso melhor para você</p>
+                        <a href="#" class="btn btn-primary">Saiba Mais</a>
+                    </div>
+
+                    <div class="marcas__card">
+                        <div class="marcas__image">
+                            <img src="./img/brand-18.png" alt="">
+                        </div>
+                        <p>Reservamos o nosso melhor para você</p>
+                        <a href="#" class="btn btn-primary">Saiba Mais</a>
+                    </div>
+
+                    <div class="marcas__card">
+                        <div class="marcas__image">
+                            <img src="./img/brand-19.png" alt="">
+                        </div>
+                        <p>Reservamos o nosso melhor para você</p>
+                        <a href="#" class="btn btn-primary">Saiba Mais</a>
+                    </div>
+
+                    <div class="marcas__card">
+                        <div class="marcas__image">
+                            <img src="./img/brand-20.png" alt="">
+                        </div>
+                        <p>Reservamos o nosso melhor para você</p>
+                        <a href="#" class="btn btn-primary">Saiba Mais</a>
+                    </div>
+                </div>
+
+                <div style="text-align: center;">
+                    <a href="#" class="btn btn-secondary">Conheça Todas as Marcas</a>
+                </div>
+
+            </div>
+        </section>
+        <!-- MARCAS FIM -->
+        <!-- GRUPO 3CORAÇÕES INICIO -->
+        <section class="grupo">
+            <div class="grupo__wrapper">
+                <h2><img src="./img/logo-3coracoes-home-1-2.png" alt=""></h2>
+                <p>Com mais de <strong>26,5% de participação no mercado</strong>, estamos presentes na América do Sul em seis países, incluindo todos os Estados do Brasil oferecendo o melhor café para diferentes paladares.</p>
+                <div class="grupo__img">
+                    <img src="https://www.3coracoes.com.br/wp-content/uploads/2022/07/home-3c.png" alt="">
+                    <a href="#" class="btn btn-tertiary">Leia Nosso Relatório de Sustentabilidade</a>
+                </div>
+                <div class="grupo__bottom">
+                    <h3>Proporcionamos experiências prazerosas que promovam a alegria e o bem-estar, criando laços duradouros e gerando valor para todos.</h3>
+                    <a href="#">
+                        NOSSA ESSÊNCIA
+                        <p>ver completo</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- GRUPO 3CORAÇÕES FIM -->
+        <!-- MEXIDO DE IDEIAS INICIO -->
+        <section class="mexido">
+            <div class="container">
+                <img src="./img/mexido_logoanimado-1-1.gif" alt="">
+                <h2>Um mundo de sabores para você experimentar</h2>
+                <p>Os produtos do Grupo <b><i>3corações</i></b> vão além de suas preparações tradicionais. Conheça receitas exclusivas criadas especialmente para o nosso blog.</p>
+                <a href="#" class="btn btn-tertiary">Acessar Mexido de Idéias</a>
+            </div>
+        </section>
+        <!-- MEXIDO DE IDEIAS FIM -->
+        <!-- MUSEU DO CAFÉ INICIO -->
+        <section class="museu">
+            <div class="container">
+                <div class="museu__wrapper">
+                    <img src="./img/logo-museum.png" alt="">
+                    <p>Faça um tour virtual pela nossa coleção com mais de <b>4 mil xícaras de café</b></p>
+                    <a href="#" class="btn btn-tertiary">Visite o Site</a>
+                </div>
+            </div>
+        </section>
+        <!-- MUSEU DO CAFÉ FIM -->
+        <!-- RECEITAS INICIO -->
+        <section class="receitas">
+            <div class="container">
+                <h2>Receba Nossas Receitas</h2>
+                <p>Cadastre-se e descubra sugestões de pratos para saborear
+                    nossos produtos em versões doces e salgadas.</p>
+
+                <form>
+                    <input type="text" name="nome" placeholder="Nome Completo">
+                    <input type="email" name="email" placeholder="E-mail">
+                    <div class="form-container">
+                        <input type="checkbox" name="privacy" id="privacy">
+                        <label for="privacy">Informo que desejo receber comunicações do Grupo 3corações e Declaro que li e concordo com a <a href="#">POLÍTICA DE PRIVACIDADE</a> do Grupo 3corações.</label>
+                    </div>
+                    <button type="submit" class="btn btn-secondary">Assinar</button>
+                </form>
+            </div>
+        </section>
+        <!-- RECEITAS FIM -->
+        <!-- SLIDER DE MARCAS INFERIOR INICIO -->
+        <section class="sliders-marcas">
+            <div class="container">
+                <h2>Nossas Marcas</h2>
+
+                <div class="swiper slider-brands">
+                    <div class="swiper-wrapper brands__wrapper">
+                        <div class="swiper-slide slider-marcas">
+                            <img src="./img/brand-1.png" alt="">
+                        </div>
+                        <div class="swiper-slide slider-marcas">
+                            <img src="./img/brand-2.png" alt="">
+                        </div>
+                        <div class="swiper-slide slider-marcas">
+                            <img src="./img/brand-3.png" alt="">
+                        </div>
+                        <div class="swiper-slide slider-marcas">
+                            <img src="./img/brand-4.png" alt="">
+                        </div>
+                        <div class="swiper-slide slider-marcas">
+                            <img src="./img/brand-5.png" alt="">
+                        </div>
+                        <div class="swiper-slide slider-marcas">
+                            <img src="./img/brand-6.png" alt="">
+                        </div>
+                        <div class="swiper-slide slider-marcas">
+                            <img src="./img/brand-7.png" alt="">
+                        </div>
+                        <div class="swiper-slide slider-marcas">
+                            <img src="./img/brand-8.png" alt="">
+                        </div>
+                        <div class="swiper-slide slider-marcas">
+                            <img src="./img/brand-9.png" alt="">
+                        </div>
+                        <div class="swiper-slide slider-marcas">
+                            <img src="./img/brand-10.png" alt="">
+                        </div>
+                        <div class="swiper-slide slider-marcas">
+                            <img src="./img/brand-11.png" alt="">
+                        </div>
+                        <div class="swiper-slide slider-marcas">
+                            <img src="./img/brand-12.png" alt="">
+                        </div>
+                        <div class="swiper-slide slider-marcas">
+                            <img src="./img/brand-13.png" alt="">
+                        </div>
+                        <div class="swiper-slide slider-marcas">
+                            <img src="./img/brand-14.png" alt="">
+                        </div>
+                        <div class="swiper-slide slider-marcas">
+                            <img src="./img/brand-15.png" alt="">
+                        </div>
+                        <div class="swiper-slide slider-marcas">
+                            <img src="./img/brand-16.png" alt="">
+                        </div>
+                        <div class="swiper-slide slider-marcas">
+                            <img src="./img/brand-17.png" alt="">
+                        </div>
+                        <div class="swiper-slide slider-marcas">
+                            <img src="./img/brand-18.png" alt="">
+                        </div>
+                        <div class="swiper-slide slider-marcas">
+                            <img src="./img/brand-19.png" alt="">
+                        </div>
+                        <div class="swiper-slide slider-marcas">
+                            <img src="./img/brand-20.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <a href="#" class="btn btn-secondary" style="margin-top: 3rem;">Conheça Todas as Marcas</a>
+            </div>
+
+        </section>
+        <!-- SLIDER DE MARCAS INFERIOR FIM -->
+    </main>
+
+
+    <footer>
+        <!-- LINKS FOOTER INICIO -->
+        <section class="footer">
+            <div class="container">
+                <div class="footer__wrapper">
+                    <ul class="footer__links">
+                        <h4>O Grupo</h4>
+                        <li><a href="#">Quem Somos</a></li>
+                        <li><a href="#">Nossa História</a></li>
+                        <li><a href="#">Governança Corporativa</a></li>
+                        <li><a href="#">Onde Estamos</a></li>
+                        <li><a href="#">Reconhecimentos</a></li>
+                        <li><a href="#">Notícias</a></li>
+                    </ul>
+
+                    <ul class="footer__links">
+                        <h4>Marcas</h4>
+                        <li><a href="#">3Corações</a></li>
+                        <li><a href="#">TRES®</a></li>
+                        <li><a href="#">Santa Clara</a></li>
+                        <li><a href="#">Pimpinela</a></li>
+                        <li><a href="#">Frisco</a></li>
+                        <li><a href="#">Nossas Marcas</a></li>
+                    </ul>
+
+                    <ul class="footer__links">
+                        <h4>Mundo do Café</h4>
+                        <li><a href="#">Mundo do Café</a></li>
+                        <li><a href="#">Do Grão à Xícara</a></li>
+                    </ul>
+
+                    <ul class="footer__links">
+                        <h4>Relacionamento</h4>
+                        <li><a href="#">Central de Relacionamento</a></li>
+                        <li><a href="#">Conectando Pessoas</a></li>
+                        <li><a href="#">Imprensa</a></li>
+                    </ul>
+
+                    <ul class="footer__links">
+                        <h4>Sustentabilidade</h4>
+                        <li><a href="#">Sustentabilidade</a></li>
+                        <li><a href="#">Iniciativas Sociais</a></li>
+                        <li><a href="#">Iniciativas Ambientais</a></li>
+                    </ul>
+
+                    <ul class="footer__links">
+                        <h4>Políticas de Privacidade</h4>
+                        <li><a href="#">Política de Privacidade</a></li>
+                        <li><a href="#">Portal da Privacidade</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- LINKS FOOTER FIM -->
+        <!-- CONTATOS FOOTER INICIO -->
+        <section class="atendimento">
+            <div class="container">
+                <div class="atendimento__wrapper">
+                    <div class="atendimento__card">
+                        <div class="atendimento__image">
+                            <img src="./img/logo-contact-3-coracoes.png" alt="">
+                        </div>
+                        <div class="atendimento__contatos">
+                            <h6>Central de Atendimento <strong>Grupo 3corações</strong></h6>
+                            <a href="tel:" target="_blank" rel="noopener noreferrer"><strong>3C VC 0800 031 3033*</strong></a>
+                            <p>*atendimento de segunda à sexta-feira das 8h às 18h. Sábado das 8h às 12h.</p>
+                        </div>
+                    </div>
+                    <div class="atendimento__card">
+                        <div class="atendimento__image">
+                            <img src="./img/logo-contact-tres.png" alt="">
+                        </div>
+                        <div class="atendimento__contatos">
+                            <h6>Central de atendimento TRES®</h6>
+                            <a href="tel:" target="_blank" rel="noopener noreferrer"><strong>3C VC 0800 979 2021*</strong></a>
+                            <p>*atendimento de segunda à sexta-feira das 8h às 18h. Sábado das 8h às 12h.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- CONTATOS FOOTER FIM -->
+        <!-- CREDITO INICIO -->
+        <div class="credits">
+            <small>RECRIADO POR RAFAEL ELIAS</small>
+        </div>
+        <!-- CREDITO FIM -->
+    </footer>
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/scripts.js"></script>
+</body>
+
+</html>
